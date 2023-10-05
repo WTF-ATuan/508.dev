@@ -128,7 +128,7 @@
           </p>
         </section>
       </section>
-      <section id="internal-projects">
+      <section class="index" id="internal-projects">
         <h3>
           Internal Projects
         </h3>
@@ -221,3 +221,23 @@
    </body>
 
   </html>
+
+  <script>
+    const elements = document.querySelectorAll('section.index');
+    function handleScroll() {
+      if (window.innerWidth >= 1250) {
+        elements.forEach((element) => {
+          const rect = element.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            element.style.transform = 'translateX(25%)';
+          } else {
+            element.style.transform = 'translateX(0%)';
+          }
+        });
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    handleScroll();
+  </script>
