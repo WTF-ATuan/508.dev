@@ -199,6 +199,35 @@
         </div>
       </section>
     </main>
+
+    <script>
+      const elements = document.querySelectorAll('section.index');
+      const animatedElements = new Set();
+  
+      function handleScroll() {
+        if (window.innerWidth >= 1250) {
+          elements.forEach((element) => {
+            if (!animatedElements.has(element)) {
+              const rect = element.getBoundingClientRect();
+              const isInView = rect.top < window.innerHeight && rect.bottom >= 0;
+              if (isInView) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateX(0%)';
+                animatedElements.add(element);
+              } else {
+                element.style.opacity = '0';
+                element.style.transform = 'translateX(25%)';
+              }
+            }
+          });
+        }
+      }
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      handleScroll();
+    </script>
+
    </body>
 
   </html>
