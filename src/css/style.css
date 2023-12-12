@@ -4,7 +4,7 @@
 /* https://coolors.co/000000-92dce5-f0f8f9-eee5e9-b5b1b3-7b6663-7a504a-772418-1e0d0a */
 
 :root {
-  --bg-color: #EEE5E9;
+    --bg-color: ##FAFAFA;
   --bg-secondary-color: #f3f3f6;
   --color-primary: #772418;
   --color-primary-off: #7a504a;
@@ -513,4 +513,161 @@ table td {
   position: absolute;
   background-color: var(--color-grey);
   border-radius: 15rem 15rem 0 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 70px;
+}
+
+.mobile-phone {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 20px;
+}
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 133px;
+    height: 267px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 12px solid #4C4D4C;
+    border-top: 16px solid #4C4D4C;}
+
+.phone-text {
+    height: 213px;
+    width: 124px;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;}
+.phone-mirror {
+    position: relative;
+    width: 120px;
+    height: 248px;
+    border-radius: 21px;
+    background-color: black;}
+.topWrapper {
+    position: relative;
+    width: 80px;
+    height: 13px;
+    margin: 0px auto 0 auto;
+    float: left;
+    left: 16%;
+    background-color: #4C4D4C;
+    border-radius: 0 0 16px 16px;}
+.line-rec {
+    position: relative;
+    width: 44px;
+    height: 5px;
+    margin: 0px auto 0 auto;
+    float: left;
+    left: 8%;
+    top: 2px;
+    background-color: rgb(83, 83, 82);
+    border-radius: 5px;
+    border: 1px solid rgb(214, 214, 214);}
+.camera {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    left: 11%;
+    width: 7px;
+    height: 7px;
+    top: 1px;
+    background-color: rgb(83, 83, 82);
+    border-radius: 30px;
+    border: 1px solid rgb(214, 214, 214);}
+.buttons {
+     background-color: black;
+     width: 100%;
+     height: 30px;
+     border-radius: 0 0 45px 45px;
+}
+
+.monitor {
+    width:515px;
+    height: 300px;
+    border: solid 12px #333;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 206px;
+}
+.monitor::-webkit-scrollbar {
+    width: 15px;
+}
+.monitor::-webkit-scrollbar-thumb {
+    background: #666;
+}
+::-webkit-scrollbar-track {
+    background-color: #888;
+}
+.stand:before {
+    content:"";
+    display:block;
+    position:relative;
+    background: #222;
+    width: 150px;
+    height: 50px;
+    top:350px;
+    left:185px;
+}
+.stand:after {
+    content:"";
+    display:block;
+    position:relative;
+    background:#333;
+    border-top-left-radius:.5em;
+    border-top-right-radius:.5em;
+    width: 300px;
+    height: 15px;
+    top: 50px;
+    left: 110px;
+}
+.cord {
+    width: 500px;
+    height: 25px;
+    border: solid 5px #000;
+    border-color: #000;
+}
+
+.cord:before {
+    content: "";
+    display:block;
+    position:relative;
+    width: 50px;
+    height: 20px;
+    top: 20px;
+    left: 20px;
+    background: black;
+
+}
+.cord:after {
+    content: "";
+    display:block;
+    position:relative;
+    width: 273px;
+    height: 16px;
+    top: 20px;
+    right: -492px;
+    border: solid 5px black;
+    border-radius: 0 0 204px 57%/11px;
+    border-color: transparent transparent #000 transparent;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
 }
